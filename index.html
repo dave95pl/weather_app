@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+</head>
+<body>
+
+    <div class="hero">
+    <video autoplay loop muted plays-inline class="back-video">
+        <source src="images/water.mp4" type"video/mp4"></video> 
+    </div>
+
+    <div class="container">
+        <div class="current-info">
+
+            <div class="date-container">
+                <div class="time" id="time">
+                    12:30 <span id="am-pm">PM</span>
+                </div>
+                <div class="date" id="date">
+                    Tuesday, 28 Mar
+                </div>
+    
+                <div class="others" id="current-weather-items">
+                <div class="weather-item">
+                    <div>Humidity</div>
+                    <div>95.2%</div>
+                </div> 
+                <div class="weather-item">
+                    <div>Pressure</div>
+                    <div>121</div>
+                </div> 
+                <div class="weather-item">
+                    <div>Wind_Speed</div>
+                    <div>222</div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="place-container">
+            <div class="time-zone" id="time-zone">Central Europe</div>
+            <div id="country" class="country">PL</div>
+        </div>
+    </div>
+
+    <div class="future-forecast">
+        <div class="today" id="current-temp">
+            <img src="https://openweathermap.org/img/wn/10d@2x.png" 
+            alt="weather icon" class="w-icon">
+            <div class="other">
+            <div class="day">Tuesday</div>
+            <div class="temp">Night -25.6&#176; C</div>
+            <div class="temp">Day -35.6&#176; C</div>
+            </div>
+        </div>
+        
+
+        </div>
+    </div>
+
+</div>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" 
+    integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" 
+    crossorigin="anonymous"></script>
+    
+    
+<script src="script.js"></script>
+</body>
+</html>

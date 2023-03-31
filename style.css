@@ -1,0 +1,408 @@
+*{   margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(12,3,51,0.3)rgba(12,3,51,0.3));
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+
+}
+.backhero{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.container{
+    padding: 20px 70px;
+    position: fixed;
+    width: 500px;
+    height: 605px;
+    background: whitesmoke;
+    padding: 28px 32px;
+    overflow: hidden;
+    border-radius: 18px;
+    font-family: 'Roboto' , sans-serif;
+    transition: 0.6s ease-out;
+}
+
+.current-info{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.date-container{
+    font-weight: 100;
+}
+
+
+.date-container.time{
+font-size: 70px;
+
+}
+
+.date-container #am-pm{
+    font-size: 20px;
+    margin-left: 20px;
+
+}
+
+.future-forecast{
+    justify-content: start; 
+    align-items: none; 
+    overflow-y: scroll;
+}
+
+.date-container .date{
+    font-size: 30px;
+}
+
+.place-container{
+    text-align: end;
+}
+
+.place-container .time-zone{
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.place-container .country{
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.current-info .others{
+    display: flex;
+    flex-direction: column;
+}
+
+.current-info .others .weather-item{
+    display: flex;
+    justify-content: space-between;
+    background: rgba(24,24,27, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px 0;
+    border: 1px solid #eee;
+
+}
+
+.future-forecast{
+    background: rgba(24,24,27,0.8);
+    padding: 25px;
+    position: bottom;
+    bottom: 0;
+    display: flex;
+    color: silver;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.future-forecast .today{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.future-forecast .today .day{
+    padding: 5px 15px;
+    background: #3c3c44;
+    border-radius: 50px;
+    text-align: center;
+}
+
+
+.future-forecast .today .temp{
+    font-size: 20px;
+    padding-top: 15px;
+}
+
+
+
+
+.future-forecast .weather-forecast{
+    display: inline-flexbox;
+    padding: 10px 15px;
+
+}
+
+.weather-forecast .weather-forecast-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+
+.weather-forecast .weather-forecast-item .day{
+    padding: 5px 15px;
+    background: #3c3c44;
+    border-radius: 50px;
+    text-align: center;
+}
+
+
+.weather-forecast .weather-forecast-item .temp{
+    font-weight: 100;
+}
+
+
+@media only screen and (max-width:730px){
+    .container{
+        padding: 20px;
+    }
+    .future-forecast{
+        justify-content: start;
+        align-items: none;
+        overflow-y: scroll;
+
+    }
+    .future-forecast .today .temp{
+        font-size: 23px;
+    }
+
+    .date-container.time{
+        font-size: 50px;
+    }
+
+    .date-container #am-pm{
+        font-size: 20px;
+    }
+
+    .date-container .date{
+        font-size: 20px;
+    }
+
+    .place-container{
+        text-align: end;
+        margin-top: 15px;
+    }
+
+    .place-container .time-zone{
+        font-size: 20px;
+    }
+
+    .current-info .others{
+        padding: 12px;
+    }
+
+    .current-info .others .weather-item{
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.search-box{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-box input{
+    color: #06283d;
+    width: 80%;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-left: 32px;
+}
+
+.search-box input::placeholder{
+    font-size: 28px;
+    font-weight: 500;
+    color: #000000;
+    text-transform: capitalize;
+}
+
+.search-box button{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    color: #000000;
+    background: #FFFFFF;
+    border-radius: 50%;
+    font-size: 22px;
+    transition: 0.4s ease;
+}
+
+.search-box button :hover{
+    color: #FFFFFF;
+    background: #0482d0;
+}
+
+.search-box i{
+    position: absolute;
+    color: #06283d;
+    font-size: 28px;
+}
+
+.weather-box{
+    text-align: center;
+     
+}
+
+.weather-box img{
+    width: 60%;
+    margin-top: 30px;
+}
+
+.weather-box .temperature{
+    position: relative;
+    color: #353f52;
+    font-size: 4rem;
+    font-weight: 800;
+    margin-top: 30px;
+    margin-left: -16px;
+}
+.weather-box .temperature span{
+    position: absolute;
+    margin-left: 4px;
+    font-size: 1.5rem;
+}
+
+.weather-box .description{
+    color:#06283d;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.weather-details{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.weather-details .humidity .weather-details .wind{
+    display: flex;
+    align-items: center;
+    width: 50%;
+     height: 100px;
+}
+
+.weather-details .humidity{
+    padding-left: 20px;
+    justify-content: flex-start;
+}
+
+.weather-details .wind{
+    padding-right: 20px;
+    justify-content: flex-end;
+}
+
+.weather-details i{
+    color: #06283d;
+    font-size: 26px;
+    margin-right: 10px;
+    margin-top: 6px;
+}
+
+.weather-details span{
+    color: #06283d;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.weather-details p{
+    color: #06283d;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.not-found{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    scale: 0;
+    opacity: 0;
+    display: none;
+}
+
+.not-found img{
+    width: 70%;
+}
+
+.not-found p{
+    color: #06283d;
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 12px;
+}
+
+.weather-box .weather-details{
+    scale: 0;
+    opacity: 0;
+}
+
+.fadeIn{
+    animation: 0.5s fadeIn forwards;
+    animation-delay: 0ms;
+}
+
+@keyframes fadeIn{
+    to{
+        scale: 1;
+        opacity: 1;
+
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .future-forecast{
+        justify-content: start; 
+        align-items: none; 
+        overflow-x: scroll;
+    }
+} 
+@media (min-aspect-ratio:16/9){
+    .backvideo{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio:16/9){
+    .backvideo{
+        width: auto;
+        height: 100%;
+    }
+}

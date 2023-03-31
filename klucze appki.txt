@@ -1,0 +1,12 @@
+API key: 7790d8cf50d87ecc88cdd575aff5a92e
+
+Api url: http://api.openweathermap.org/data/2.5/forecast?id=524901&appid=7790d8cf50d87ecc88cdd575aff5a92e
+
+ICONS: <script src="https://kit.fontawesome.com/c9cb5b24a1.js" crossorigin="anonymous"></script>
+
+FONT: <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap" rel="stylesheet">
+
+
+weatherApi.com key  6cd30c4d3a3d41f9b36201254231803
